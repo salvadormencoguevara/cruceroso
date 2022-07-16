@@ -1,0 +1,19 @@
+{
+  "name": "crucerosonlineapi",
+  "version": "1.0.0",
+  "description": "cruceros online api",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ."
+  },
+  "author": "desarrollo.software",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.4"
+  }
+}

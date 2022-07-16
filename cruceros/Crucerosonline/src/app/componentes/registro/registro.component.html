@@ -1,0 +1,72 @@
+<app-menu></app-menu>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+            <div class="card">
+                <div class="card-body text-center">
+                    <span class="titulo">Registrar</span>
+                  <form class="mt-3" [formGroup]="registroFrom" (ngSubmit)="registarUsuario()">
+                       <div class="mb-3">
+                        <label class="font-weight-bold">Nombre <span class="text-danger">*</span></label>
+                        <input type="text" formControlName="nombre" class="form-control">
+                        <div class="text-danger" 
+                          *ngIf="registroFrom.get('nombre')?.hasError('required') && registroFrom.get('nombre')?.touched">
+                         <span>El nombre es <strong>obligatorio</strong></span>
+                        </div>
+                    </div>
+                      <div class="mb-3">
+                        <label class="font-weight-bold">Apellido<span class="text-danger">*</span></label>
+                        <input type="text" formControlName="apellido" class="form-control">
+                        <div class="text-danger" 
+                          *ngIf="registroFrom.get('apellido')?.hasError('required') && registroFrom.get('apellido')?.touched">
+                         <span>El apellido es <strong>obligatorio</strong></span>
+                        </div>
+                      </div>
+                      <div>
+                        <label class="font-weight-bold">Direccion<span class="text-danger"></span></label>
+                        <input type="text" formControlName="direccion" class="form-control">
+                      </div>
+                      <div class="mb-3">
+                        <label class="font-weight-bold">Telefono<span class="text-danger">*</span></label>
+                        <input type="number" formControlName="telefono" class="form-control">
+                      </div>
+                      <div>
+                        <label class="font-weight-bold">Fecha de Nacimiento<span class="text-danger">*</span></label>
+                        <input type="date" formControlName="fechaNacimiento" class="form-control">
+                      </div>
+                      <div class="mb-3">
+                        <label class="font-weight-bold">Correo<span class="text-danger">*</span></label>
+                        <input type="text" formControlName="correo" class="form-control">
+                        <div class="text-danger" 
+                          *ngIf="registroFrom.get('correo')?.hasError('required') && registroFrom.get('correo')?.touched">
+                         <span>El correo es <strong>obligatorio</strong></span>
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <label class="font-weight-bold">Confirmar Correo<span class="text-danger">*</span></label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="mb-3">
+                        <label class="font-weight-bold">Contraseña<span class="text-danger">*</span></label>
+                        <input type="password" formControlName="contraseña" class="form-control">
+                        <div class="text-danger" 
+                          *ngIf="registroFrom.get('contraseña')?.hasError('required') && registroFrom.get('contraseña')?.touched">
+                         <span>La contraseña es <strong>obligatoria</strong></span>
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <label class="font-weight-bold">Confirmar Contraseña<span class="text-danger">*</span></label>
+                        <input type="password" class="form-control">
+                      </div>
+                      <div class="mb-3">
+                        <button type="submit" [disabled]="registroFrom.invalid" class="btn btn-primary btn-lg" >Registrarse</button>
+                      </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+

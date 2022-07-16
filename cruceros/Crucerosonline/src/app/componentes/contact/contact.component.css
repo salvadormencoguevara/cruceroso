@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans' sans-serif;
+}
+
+.container-form{
+   
+    background-color:aqua;
+    margin: 15px;
+    border-radius: 5px;
+    padding-left: 20px 40px 20px 40px;
+
+   
+
+}
+
+
+
+.container-form a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+}
+
+.container-contact{   
+    max-width: 100rem;
+    display:grid;
+    margin-left: 20rem;
+    
+   
+}
+
+
+
+.campo{
+    max-width: 70%;
+    background-color: #fafafa;
+    margin: 1rem;
+    padding: 0.5rem;
+    border: 2px solid #ccc;
+    text-align: center;
+    
+    
+   
+}
+
+.text-title{
+    margin: auto;
+    text-align: center;
+    padding: auto;
+    border: 1.5em;
+}
+
+.fa-phone{
+    right: auto;
+    max-width: 20%;
+    padding: 20px;
+    margin: auto;
+}
+
+.fa-envelope{
+    right: 30px;
+    max-width: 20%;
+    padding: 20px;
+    margin: auto;
+   
+}

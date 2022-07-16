@@ -1,0 +1,24 @@
+.formulario{
+    background: rgba(0, 0, 0, .1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+}
+
+input.btn.btn-block.submit{
+    background: #8b62ad;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700 !important;
+    color: rgb(24, 23, 23);
+}
+
+
+input.btn.btn-block.submit:hover {
+    background: #784f99;
+    color: white
+}
+
+.row.justify-content-center.pt-5.mt-5.mr-1{
+    margin-bottom: 100px;
+}
